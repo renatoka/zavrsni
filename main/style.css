@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header */
+
+.header-img img {
+    width: 100%;
+}
+
+.header-nav {
+    position: relative;
+    top: -5px;
+    background-color: rgb(70, 70, 70);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.header-nav a:hover {
+    background-color: black;
+}
+
+/* Main */
+
+.main, .news-main, .contact-main, .about-main, .gallery-main {
+    padding: 10px;
+}
+
+.main-text {
+    display: flex;
+    gap: 10px;
+}
+
+.main figure img {
+    width: 350px;
+}
+
+figure figcaption {
+    font-size: 12px;
+    color: gray;
+    margin-top: 5px;
+}
+
+.main h1,
+.main h2 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
+	color: blue;
+}
+
+.main a {
+	color: blue;
+	text-decoration: none;
+}
+
+.main a:hover {
+	color: #8b3727;
+	text-decoration: underline;
+}
+
+.main p {
+	line-height: 1.8em;
+}
+
+footer {
+    background-color: rgb(70, 70, 70);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* News */
+
+.news-item {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+
+.news-item img {
+    width: 200px;
+}
+
+.news-body {
+    padding: 10px;
+}
+
+.contact-form form {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form label {
+    font-size: 1.2em;
+}
+
+.contact-form input {
+    padding: 5px;
+    font-size: 1.2em;
+    width: 30%;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.gallery-item img {
+    width: auto;
+    height: 350px;
+}
+
+.about-body {
+    display: flex;
+    gap: 10px;
+}
+
+.about-body video {
+    width: 50%;
+    height: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .main-text {
+        flex-direction: column;
+    }
+    .main figure img {
+        width: 100%;
+    }
+
+    .news-item {
+        flex-direction: column;
+    }
+
+    .news-item img {
+        width: 100%;
+    }
+
+    .contact-form input {
+        width: 100%;
+    }
+
+    .about-body {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .about-body video {
+        width: 100%;
+        height: 100%;
+    }
+}
