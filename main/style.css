@@ -170,7 +170,7 @@ footer a {
     gap: 10px;
 }
 
-.about-body iframe {
+.about-body video {
     width: 80%;
 }
 
@@ -201,7 +201,7 @@ footer a {
         gap: 10px;
     }
 
-    .about-body iframe {
+    .about-body video {
         width: 100%;
     }
 }
