@@ -74,6 +74,7 @@ h2 {
 
 .main p {
 	line-height: 1.8em;
+    font-size: 18px;
 }
 
 footer {
@@ -109,6 +110,11 @@ footer a {
     justify-content: space-between;
 }
 
+.news-text p {
+    font-size: 18px;
+}
+
+
 .news-box img {
     width: 250px;
 }
@@ -124,6 +130,19 @@ footer a {
 
 .news-body {
     padding: 10px;
+}
+
+.news-body p {
+    font-size: 18px;
+}
+
+.news-body h3 {
+    font-style: italic;
+}
+
+.news-body a, .news-text a {
+    color: blue;
+    text-decoration: none;
 }
 
 /* Contact */
@@ -170,8 +189,12 @@ footer a {
     gap: 10px;
 }
 
+.about-body p {
+    font-size: 18px;
+}
+
 .about-body video {
-    width: 80%;
+    width: 100%;
 }
 
 @media only screen and (max-width: 768px) {
